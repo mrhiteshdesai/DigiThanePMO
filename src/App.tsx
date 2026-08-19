@@ -80,6 +80,8 @@ function RaciKey() {
     </div>
   );
 }
+
+function pillClass(status: string, rag?: string) {
   const s = status.toLowerCase();
   if (s.includes("done")) return "pill pill-ok";
   if (s.includes("progress") || s === "next") return "pill pill-run";
