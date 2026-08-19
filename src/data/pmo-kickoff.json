@@ -1,0 +1,1826 @@
+{
+  "title": "DigiThane 2.0 — Development PMO",
+  "loi": "2026-07-31",
+  "goLive": "2026-11-30",
+  "updated": "2026-08-19",
+  "parties": [
+    {
+      "code": "TMC",
+      "label": "Thane Municipal Corporation — authority and data fiduciary"
+    },
+    {
+      "code": "RailTel",
+      "label": "Consortium lead — hosting and network"
+    },
+    {
+      "code": "Smartrags",
+      "label": "Consortium partner"
+    },
+    {
+      "code": "PM",
+      "label": "Project Manager — sole coordinator with TMC / RailTel / Smartrags"
+    },
+    {
+      "code": "Eng",
+      "label": "Technical Lead — answers through the Project Manager"
+    },
+    {
+      "code": "Dev",
+      "label": "Development team — people named by job title on Delivery Roles"
+    },
+    {
+      "code": "Ops",
+      "label": "DigiThane operations (merchant verification after go-live)"
+    },
+    {
+      "code": "ERP",
+      "label": "Municipal ERP vendors (Ascentech / ABM) — when APIs apply"
+    },
+    {
+      "code": "PG",
+      "label": "Common payment gateway vendor — when payments apply"
+    }
+  ],
+  "raciPhases": [
+    {
+      "id": "P1",
+      "spacer": "P1-Platform",
+      "title": "Phase 1 — Platform (website, mobile apps, control centre)",
+      "window": "August – September 2026",
+      "activities": [
+        "Weekly progress update to TMC / consortium",
+        "Written questions from TMC (acknowledge in 1 working day, answer in 3)",
+        "Software requirement specification, design document, and hosting note (T+4)",
+        "Accept a completed software module",
+        "API gateway (certify with security)",
+        "Security, user roles, and audit trail",
+        "Citizen login, one-time password, consent, and profile",
+        "Notifications (app, SMS, email)",
+        "Citizen data download and deletion",
+        "Citizen home, search, and service tiles (Marathi and English)",
+        "Master control centre",
+        "News, notices, and policy text",
+        "Proof-of-concept demonstration (T+8)"
+      ],
+      "codes": [
+        [
+          "I",
+          "I",
+          "I",
+          "A",
+          "R",
+          "I",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "I",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "R",
+          "R",
+          "-",
+          "C",
+          "-"
+        ],
+        [
+          "-",
+          "-",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "I",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "R",
+          "R",
+          "-",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    {
+      "id": "P2",
+      "spacer": "P2-Services",
+      "title": "Phase 2 — Civic, G2C, commerce (one service at a time)",
+      "window": "After MCC approved through UAT (Sep–Nov 2026)",
+      "activities": [
+        "Grievance workflow (G-07)",
+        "Municipal adapters — tax / water (G-05)",
+        "Common payment gateway (G-06)",
+        "Merchant onboarding (G-10)",
+        "Merchant app (G-13)",
+        "Citizen marketplace bridge (G-12)",
+        "Advertisement packages (G-34)",
+        "Offers and coupons (G-11)",
+        "Forums (G-14)",
+        "SOS (G-15)",
+        "City alerts (G-09)",
+        "Classifieds (G-35)",
+        "Events / tickets (G-37)",
+        "Jobs (G-38)",
+        "Hall / ground booking (G-40)",
+        "Premium / ad-free (G-41)",
+        "Parking (G-42)",
+        "Property listings (G-44)",
+        "Tourism (G-45)",
+        "Clinic appointments (G-46)",
+        "Daily deals (G-47)",
+        "Maps (G-17 / G-29)",
+        "Citizen chatbot (G-18)",
+        "Polls and surveys (G-08 / G-32)",
+        "Helpdesk product (G-23)"
+      ],
+      "codes": [
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "C",
+          "-"
+        ],
+        [
+          "A",
+          "I",
+          "-",
+          "C",
+          "R",
+          "R",
+          "-",
+          "C",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "R",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "R",
+          "-",
+          "C"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "I",
+          "-",
+          "C",
+          "R",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "I",
+          "-",
+          "C",
+          "R",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "C"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "C"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "C",
+          "-",
+          "-"
+        ]
+      ]
+    },
+    {
+      "id": "P3",
+      "spacer": "P3-UAT & go-live",
+      "title": "Phase 3 — UAT, stores, CERT-In VAPT, STQC, and go-live",
+      "window": "October – 30 November 2026",
+      "activities": [
+        "User acceptance test 1",
+        "User acceptance test 2",
+        "Final user acceptance test",
+        "CERT-In VAPT — consortium books the empaneled auditor",
+        "STQC (IV&V / GIGW) — consortium books",
+        "Close CERT-In and STQC findings before cut-over",
+        "India hosting and disaster recovery",
+        "SMS / DLT / one-time password for production",
+        "Google Play and Apple App Store submit",
+        "TMC approval to go live",
+        "Go-live (30 Nov 2026) — after CERT-In VAPT and STQC"
+      ],
+      "codes": [
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "R",
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "R",
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "R",
+          "C",
+          "C",
+          "C",
+          "C"
+        ],
+        [
+          "C",
+          "A",
+          "C",
+          "R",
+          "C",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "C",
+          "A",
+          "C",
+          "R",
+          "C",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "C",
+          "I",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "A",
+          "C",
+          "C",
+          "C",
+          "I",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "I",
+          "C",
+          "-",
+          "R",
+          "C",
+          "I",
+          "C",
+          "-",
+          "-"
+        ],
+        [
+          "-",
+          "I",
+          "-",
+          "C",
+          "A",
+          "R",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "C",
+          "C",
+          "R",
+          "C",
+          "I",
+          "-",
+          "-",
+          "-"
+        ],
+        [
+          "A",
+          "A",
+          "C",
+          "R",
+          "R",
+          "R",
+          "C",
+          "I",
+          "I"
+        ]
+      ]
+    }
+  ],
+  "raciActivities": [
+    "[P1] Weekly progress update to TMC / consortium",
+    "[P1] Written questions from TMC (acknowledge in 1 working day, answer in 3)",
+    "[P1] Software requirement specification, design document, and hosting note (T+4)",
+    "[P1] Accept a completed software module",
+    "[P1] API gateway (certify with security)",
+    "[P1] Security, user roles, and audit trail",
+    "[P1] Citizen login, one-time password, consent, and profile",
+    "[P1] Notifications (app, SMS, email)",
+    "[P1] Citizen data download and deletion",
+    "[P1] Citizen home, search, and service tiles (Marathi and English)",
+    "[P1] Master control centre",
+    "[P1] News, notices, and policy text",
+    "[P1] Proof-of-concept demonstration (T+8)",
+    "[P2] Grievance workflow (G-07)",
+    "[P2] Municipal adapters — tax / water (G-05)",
+    "[P2] Common payment gateway (G-06)",
+    "[P2] Merchant onboarding (G-10)",
+    "[P2] Merchant app (G-13)",
+    "[P2] Citizen marketplace bridge (G-12)",
+    "[P2] Advertisement packages (G-34)",
+    "[P2] Offers and coupons (G-11)",
+    "[P2] Forums (G-14)",
+    "[P2] SOS (G-15)",
+    "[P2] City alerts (G-09)",
+    "[P2] Classifieds (G-35)",
+    "[P2] Events / tickets (G-37)",
+    "[P2] Jobs (G-38)",
+    "[P2] Hall / ground booking (G-40)",
+    "[P2] Premium / ad-free (G-41)",
+    "[P2] Parking (G-42)",
+    "[P2] Property listings (G-44)",
+    "[P2] Tourism (G-45)",
+    "[P2] Clinic appointments (G-46)",
+    "[P2] Daily deals (G-47)",
+    "[P2] Maps (G-17 / G-29)",
+    "[P2] Citizen chatbot (G-18)",
+    "[P2] Polls and surveys (G-08 / G-32)",
+    "[P2] Helpdesk product (G-23)",
+    "[P3] User acceptance test 1",
+    "[P3] User acceptance test 2",
+    "[P3] Final user acceptance test",
+    "[P3] CERT-In VAPT — consortium books the empaneled auditor",
+    "[P3] STQC (IV&V / GIGW) — consortium books",
+    "[P3] Close CERT-In and STQC findings before cut-over",
+    "[P3] India hosting and disaster recovery",
+    "[P3] SMS / DLT / one-time password for production",
+    "[P3] Google Play and Apple App Store submit",
+    "[P3] TMC approval to go live",
+    "[P3] Go-live (30 Nov 2026) — after CERT-In VAPT and STQC"
+  ],
+  "raciCodes": [
+    [
+      "I",
+      "I",
+      "I",
+      "A",
+      "R",
+      "I",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "I",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "R",
+      "R",
+      "-",
+      "C",
+      "-"
+    ],
+    [
+      "-",
+      "-",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "I",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "R",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "C",
+      "-"
+    ],
+    [
+      "A",
+      "I",
+      "-",
+      "C",
+      "R",
+      "R",
+      "-",
+      "C",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "R",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "R",
+      "-",
+      "C"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "I",
+      "-",
+      "C",
+      "R",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "I",
+      "-",
+      "C",
+      "R",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "C"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "C"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "R",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "R",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "R",
+      "C",
+      "C",
+      "C",
+      "C"
+    ],
+    [
+      "C",
+      "A",
+      "C",
+      "R",
+      "C",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "C",
+      "A",
+      "C",
+      "R",
+      "C",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "C",
+      "I",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "A",
+      "C",
+      "C",
+      "C",
+      "I",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "I",
+      "C",
+      "-",
+      "R",
+      "C",
+      "I",
+      "C",
+      "-",
+      "-"
+    ],
+    [
+      "-",
+      "I",
+      "-",
+      "C",
+      "A",
+      "R",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "C",
+      "C",
+      "R",
+      "C",
+      "I",
+      "-",
+      "-",
+      "-"
+    ],
+    [
+      "A",
+      "A",
+      "C",
+      "R",
+      "R",
+      "R",
+      "C",
+      "I",
+      "I"
+    ]
+  ],
+  "roadmap": [
+    {
+      "gate": "T+0 Agreement",
+      "date": "31 Jul 2026",
+      "status": "done",
+      "note": "Signed agreement — planning start (treated as LOI)"
+    },
+    {
+      "gate": "T+4 Design pack",
+      "date": "28 Aug 2026",
+      "status": "queued",
+      "note": "Requirement and design documents; hosting note"
+    },
+    {
+      "gate": "T+8 Proof of concept",
+      "date": "25 Sep 2026",
+      "status": "queued",
+      "note": "Login, home, master control centre"
+    },
+    {
+      "gate": "UAT 1",
+      "date": "28 Oct 2026",
+      "status": "queued",
+      "note": "Closed staging test with TMC nominees — not a public launch"
+    },
+    {
+      "gate": "UAT 2",
+      "date": "11 Nov 2026",
+      "status": "queued",
+      "note": "Next batch of services on staging"
+    },
+    {
+      "gate": "Final UAT",
+      "date": "18 Nov 2026",
+      "status": "queued",
+      "note": "Remaining launch services on staging"
+    },
+    {
+      "gate": "CERT-In VAPT and STQC",
+      "date": "4–18 Nov 2026",
+      "status": "queued",
+      "note": "Consortium books both. Overlaps UAT. Findings closed before cut-over."
+    },
+    {
+      "gate": "TMC approval",
+      "date": "25 Nov 2026",
+      "status": "queued",
+      "note": "Operating notes"
+    },
+    {
+      "gate": "Go-live",
+      "date": "30 Nov 2026",
+      "status": "queued",
+      "note": "Public stores and live services"
+    }
+  ],
+  "tasks": [
+    {
+      "phase": "1 Platform",
+      "id": "G-24",
+      "name": "API gateway — certify with security",
+      "role": "Integration Engineer",
+      "target": "26 Aug 2026",
+      "status": "In progress",
+      "rag": "amber"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-25",
+      "name": "Security, user roles, and audit trail",
+      "role": "Security Engineer",
+      "target": "26 Aug 2026",
+      "status": "In progress",
+      "rag": "amber"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "T+4",
+      "name": "Requirement specification, design document, and hosting note",
+      "role": "Business Analyst, Solution Architect, Technical Writer",
+      "target": "28 Aug 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-27",
+      "name": "Citizen login, one-time password, consent, and profile",
+      "role": "Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "11 Sep 2026",
+      "status": "Next",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-26",
+      "name": "Notifications (app, SMS, email)",
+      "role": "Backend Engineer",
+      "target": "18 Sep 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-28",
+      "name": "Citizen data download and deletion",
+      "role": "Security Engineer, Backend Engineer",
+      "target": "18 Sep 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-01",
+      "name": "Citizen home, search, and service tiles (Marathi and English)",
+      "role": "Web Engineer, Mobile Engineer, UI Designer",
+      "target": "25 Sep 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-16",
+      "name": "Master control centre",
+      "role": "Web Engineer, Analytics Engineer",
+      "target": "25 Sep 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "T+8",
+      "name": "Proof-of-concept demonstration",
+      "role": "Chief Technology Officer",
+      "target": "25 Sep 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "G-03",
+      "name": "News, notices, and editable policy text",
+      "role": "Backend Engineer, Web Engineer",
+      "target": "9 Oct 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-07",
+      "name": "Grievance workflow",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "After control centre",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-05",
+      "name": "Municipal tax and water adapters",
+      "role": "Integration Engineer",
+      "target": "When department APIs arrive",
+      "status": "Waiting on vendor documents",
+      "rag": "amber"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-06",
+      "name": "Common payment gateway",
+      "role": "Integration Engineer, Backend Engineer",
+      "target": "When payment documents arrive",
+      "status": "Waiting on vendor documents",
+      "rag": "amber"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-10",
+      "name": "Merchant onboarding",
+      "role": "Backend Engineer, Web Engineer",
+      "target": "After control centre",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-13",
+      "name": "Merchant app",
+      "role": "Mobile Engineer, Backend Engineer",
+      "target": "After control centre",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-12",
+      "name": "Citizen marketplace",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "After control centre",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-34",
+      "name": "Advertisement packages",
+      "role": "Product Manager, Backend Engineer",
+      "target": "After marketplace",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-11",
+      "name": "Offers and coupons",
+      "role": "Backend Engineer, Mobile Engineer",
+      "target": "With merchant app",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-14",
+      "name": "Forums",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-15",
+      "name": "Emergency SOS",
+      "role": "Backend Engineer, Mobile Engineer, Web Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-09",
+      "name": "City alerts",
+      "role": "Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-35",
+      "name": "Classifieds",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-37",
+      "name": "Events and tickets",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-38",
+      "name": "Jobs",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-40",
+      "name": "Hall and ground booking",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-41",
+      "name": "Premium (advertisement-free commercial)",
+      "role": "Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-42",
+      "name": "Parking",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-44",
+      "name": "Property listings",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-45",
+      "name": "Tourism",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-46",
+      "name": "Clinic appointments",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-47",
+      "name": "Daily deals",
+      "role": "Product Manager, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-17",
+      "name": "Maps analytics",
+      "role": "GIS Engineer, Web Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-29",
+      "name": "Map navigation",
+      "role": "GIS Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-18",
+      "name": "Citizen chatbot",
+      "role": "Chatbot Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-08",
+      "name": "Polls",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-32",
+      "name": "Surveys",
+      "role": "Backend Engineer, Web Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "2 Services",
+      "id": "G-23",
+      "name": "Helpdesk (citizen and operator console)",
+      "role": "Product Manager, Backend Engineer, Web Engineer",
+      "target": "UAT window",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "UAT1",
+      "name": "User acceptance test 1 (closed staging)",
+      "role": "QA Engineer, Quality Lead, Project Manager",
+      "target": "28 Oct 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "UAT2",
+      "name": "User acceptance test 2 (closed staging)",
+      "role": "QA Engineer, Quality Lead, Project Manager",
+      "target": "11 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "UAT3",
+      "name": "Final user acceptance test (closed staging)",
+      "role": "QA Engineer, Quality Lead, Project Manager",
+      "target": "18 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "CERT",
+      "name": "CERT-In VAPT (consortium books)",
+      "role": "Security Engineer, Project Manager",
+      "target": "4–18 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "STQC",
+      "name": "STQC IV&V / GIGW (consortium books)",
+      "role": "Security Engineer, Project Manager",
+      "target": "4–18 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "FIND",
+      "name": "Close CERT-In and STQC findings",
+      "role": "Security Engineer, Backend Engineer, Web Engineer, Mobile Engineer",
+      "target": "Before 25 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "STORE",
+      "name": "Google Play and Apple App Store submission",
+      "role": "Mobile Engineer, DevOps Engineer",
+      "target": "10 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "APPR",
+      "name": "TMC approval and operating notes",
+      "role": "Technical Writer, Project Manager",
+      "target": "25 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    },
+    {
+      "phase": "3 UAT and go-live",
+      "id": "LIVE",
+      "name": "Go-live",
+      "role": "Chief Technology Officer, DevOps Engineer",
+      "target": "30 Nov 2026",
+      "status": "Queued",
+      "rag": "green"
+    }
+  ],
+  "roles": [
+    {
+      "role": "Chief Technology Officer",
+      "mandate": "Sets build order, accepts each module, raises blockers to the Project Manager"
+    },
+    {
+      "role": "Project Manager",
+      "mandate": "Single point of contact for TMC, RailTel, and Smartrags"
+    },
+    {
+      "role": "Technical Lead",
+      "mandate": "Day-to-day technical decisions and answers to written questions"
+    },
+    {
+      "role": "Business Analyst",
+      "mandate": "Requirement documents and open questions; does not guess department APIs"
+    },
+    {
+      "role": "Product Manager",
+      "mandate": "Citizen and merchant journeys from the product brief"
+    },
+    {
+      "role": "Solution Architect",
+      "mandate": "System design and the API gateway described in the design document"
+    },
+    {
+      "role": "Database Engineer",
+      "mandate": "Database design and data integrity"
+    },
+    {
+      "role": "Backend Engineer",
+      "mandate": "Server software, receipts, and logs"
+    },
+    {
+      "role": "Web Engineer",
+      "mandate": "Citizen website and master control centre"
+    },
+    {
+      "role": "Mobile Engineer",
+      "mandate": "Android and iOS apps (one shared codebase)"
+    },
+    {
+      "role": "Integration Engineer",
+      "mandate": "Links to municipal systems and the payment gateway, from vendor documents only"
+    },
+    {
+      "role": "GIS Engineer",
+      "mandate": "Ward lookup and maps"
+    },
+    {
+      "role": "Security Engineer",
+      "mandate": "Access control, audit trail, privacy safeguards, CERT-In VAPT and STQC evidence"
+    },
+    {
+      "role": "DevOps Engineer",
+      "mandate": "Build, test, and release to staging and production"
+    },
+    {
+      "role": "QA Engineer",
+      "mandate": "Tests each module before it is offered to TMC"
+    },
+    {
+      "role": "Quality Lead",
+      "mandate": "Final quality check before TMC sees a module"
+    },
+    {
+      "role": "Analytics Engineer",
+      "mandate": "Control-centre reports after the master shell is ready"
+    },
+    {
+      "role": "Chatbot Engineer",
+      "mandate": "In-app help for citizens (Marathi and English)"
+    },
+    {
+      "role": "Technical Writer",
+      "mandate": "Handover notes, design document support, operating notes"
+    },
+    {
+      "role": "UI Designer",
+      "mandate": "Screens in Marathi and English"
+    }
+  ],
+  "sla": {
+    "question_ack_wd": 1,
+    "question_answer_wd": 3,
+    "nightly_refresh": "End of each working day (IST)",
+    "board_update": "How this board is updated: at the end of each working day (IST) the Development Cell refreshes status, copies it into the public PMO site, and pushes git. Netlify rebuilds this page. The Excel file has no live status.",
+    "contact": "Please write to the Project Manager only. The Technical Lead answers through the Project Manager. Team members are not available for direct calls or meetings."
+  },
+  "notes": [
+    "This matrix is software development through go-live on 30 November 2026. Letter of intent paperwork, consortium board, performance bank guarantee, and the inception report are not in this file.",
+    "R = Responsible (does the work). A = Accountable (one owner per row who signs off). C = Consulted (two-way). I = Informed (one-way). “-” = not in this activity.",
+    "Colours: Accountable = red, Responsible = green, Consulted = gold, Informed = blue, Not applicable = grey.",
+    "Delivery Roles lists job titles on this project. TMC, RailTel, and Smartrags write to the Project Manager only. Do not call engineers directly.",
+    "Where municipal or payment-gateway documents are still awaited, those vendors stay Consulted until the documents arrive.",
+    "CERT-In VAPT and STQC are part of go-live. RailTel (consortium) books the labs. The delivery team supplies the environment and closes findings before cut-over."
+  ],
+  "messages": []
+}
