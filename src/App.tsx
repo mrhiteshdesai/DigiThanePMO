@@ -82,11 +82,12 @@ function RaciKey() {
 }
 
 function PartyKey() {
+  const legend = data.parties.filter((p) => !["TMC", "RailTel", "Smartrags"].includes(p.code));
   return (
     <div className="party-key" aria-label="Column names">
-      <div className="party-key-title">Columns</div>
+      <div className="party-key-title">Delivery columns</div>
       <div className="party-grid">
-        {data.parties.map((p) => (
+        {legend.map((p) => (
           <div key={p.code} className="party-row">
             <span className="party-code">{p.code}</span>
             <span className="party-label">{p.label}</span>
@@ -110,7 +111,7 @@ export default function App() {
   const [q, setQ] = useState("");
   const [from, setFrom] = useState("");
   const [askState, setAskState] = useState<"idle" | "sending" | "sent" | "error">("idle");
-  const [sessionThreads, setSessionThreads] = useState<{ from: string; q: string }[]>([]);
+  const [sessionThreads, setSessionThreads] = useState<{ from: string; q: string; at: string }[]>([]);
 
   const gates = data.roadmap.length;
   const done = data.roadmap.filter((r) => r.status === "done").length;
@@ -136,7 +137,10 @@ export default function App() {
     } catch {
       /* local Vite has no Netlify Forms — still keep the thread on this page */
     }
-    setSessionThreads((rows) => [{ from: from.trim() || "(not given)", q: q.trim() }, ...rows]);
+    setSessionThreads((rows) => [
+      { from: from.trim() || "(not given)", q: q.trim(), at: new Date().toLocaleString("en-GB") },
+      ...rows,
+    ]);
     setQ("");
     setAskState("sent");
   }
@@ -397,20 +401,64 @@ export default function App() {
                 {askState === "error" ? <p className="lede">Could not send. Try again.</p> : null}
               </form>
               <div className="ask-threads">
-                <div className="stat-label">Threads</div>
+                <div className="chat-head">
+                  <div className="stat-label">Threads</div>
+                  <span className="chat-sub">Questions and replies</span>
+                </div>
                 {data.messages.length === 0 && sessionThreads.length === 0 ? (
-                  <p className="empty">No threads yet.</p>
+                  <div className="chat-empty">No messages yet. Submit a question above.</div>
                 ) : (
-                  <ul>
-                    {sessionThreads.map((m, i) => (
-                      <li key={`s-${i}`}>
-                        <strong>{m.from}</strong> — {m.q}
-                      </li>
+                  <div className="chat-feed">
+                    {[...sessionThreads].reverse().map((m, i) => (
+                      <div key={`s-${i}`} className="chat-row in">
+                        <div className="chat-bubble">
+                          <div className="chat-meta">{m.from}</div>
+                          <p>{m.q}</p>
+                          <div className="chat-time">{m.at}</div>
+                        </div>
+                      </div>
                     ))}
-                    {(data.messages as Array<string | Record<string, string>>).map((m, i) => (
-                      <li key={i}>{typeof m === "string" ? m : m.answer || m.body || JSON.stringify(m)}</li>
-                    ))}
-                  </ul>
+                    {(data.messages as Array<string | Record<string, string>>).map((m, i) => {
+                      if (typeof m === "string") {
+                        return (
+                          <div key={i} className="chat-row in">
+                            <div className="chat-bubble">
+                              <div className="chat-meta">Question</div>
+                              <p>{m}</p>
+                            </div>
+                          </div>
+                        );
+                      }
+                      const question = m.question || m.body || m.q;
+                      const answer = m.answer || m.reply;
+                      return (
+                        <div key={i} className="chat-thread">
+                          {question ? (
+                            <div className="chat-row in">
+                              <div className="chat-bubble">
+                                <div className="chat-meta">{m.from || "Question"}</div>
+                                <p>{question}</p>
+                              </div>
+                            </div>
+                          ) : null}
+                          {answer ? (
+                            <div className="chat-row out">
+                              <div className="chat-bubble">
+                                <div className="chat-meta">Development Cell</div>
+                                <p>{answer}</p>
+                              </div>
+                            </div>
+                          ) : !question ? (
+                            <div className="chat-row in">
+                              <div className="chat-bubble">
+                                <p>{JSON.stringify(m)}</p>
+                              </div>
+                            </div>
+                          ) : null}
+                        </div>
+                      );
+                    })}
+                  </div>
                 )}
               </div>
             </div>

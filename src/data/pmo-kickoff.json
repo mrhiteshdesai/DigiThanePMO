@@ -934,7 +934,7 @@
       "gate": "T+8 Proof of concept",
       "date": "25 Sep 2026",
       "status": "queued",
-      "note": "Login, home, master control centre. Screen prototypes already done (Figma Make)."
+      "note": "Login, home, master control centre. Screen prototypes already done."
     },
     {
       "gate": "B2C pack",
@@ -1001,7 +1001,7 @@
     {
       "phase": "1 Platform",
       "id": "UI",
-      "name": "UI prototyping (Figma Make) — citizen and merchant screens",
+      "name": "UI prototyping — citizen and merchant screens",
       "role": "UI Designer",
       "target": "19 Aug 2026",
       "status": "Done",
@@ -1357,7 +1357,7 @@
     },
     {
       "role": "UI Designer",
-      "mandate": "Screen prototypes (Figma Make) and production UI in Marathi and English"
+      "mandate": "Screen prototypes and production UI in Marathi and English"
     }
   ],
   "sla": {
