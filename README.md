@@ -10,7 +10,10 @@ Working copy of the municipal app stays at `C:\Projects\DigiThane`. When Hitesh 
 
 - Build: `npm run build`
 - Publish: `dist`
-- Optional: site password; env `VITE_PM_EMAIL` for Ask the Development Cell
+- **Ask the Development Cell** uses form name `pmo-question` (Forms detection must stay on).
+- Email alerts (optional): Site configuration → Notifications → Form submission notifications  
+  (or Forms → open `pmo-question` → Notifications). Add the inbox that should receive questions.
+- Optional: site password
 
 ## Local preview
 

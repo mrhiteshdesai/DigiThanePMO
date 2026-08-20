@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState, type FormEvent } from "react";
 import data from "./data/pmo-kickoff.json";
 
 type Tab = "roadmap" | "achieve" | "tasks" | "raci" | "roles" | "ask";
@@ -37,11 +37,11 @@ const NAV: { id: Tab; label: string; kicker: string }[] = [
 
 const PAGE: Record<Tab, { title: string; blurb: string }> = {
   roadmap: { title: "Delivery roadmap", blurb: "Agreement 31 Jul 2026 · public go-live 30 Nov 2026" },
-  achieve: { title: "Achievements", blurb: "Live status. The Excel download does not carry this column." },
+  achieve: { title: "Achievements", blurb: "Live status of the workstream." },
   tasks: { title: "Workstream", blurb: "Full task list with owners and targets." },
   raci: { title: "RACI matrix", blurb: "" },
-  roles: { title: "Delivery cell", blurb: "TMC writes to the Project Manager only." },
-  ask: { title: "Ask the Development Cell", blurb: "Acknowledge in 1 working day. Answer in 3. Not instant chat." },
+  roles: { title: "Delivery cell", blurb: "Job titles on the delivery team." },
+  ask: { title: "Ask the Development Cell", blurb: "Questions are recorded on this site. On the published board they also arrive by email (Netlify)." },
 };
 
 function achieveRank(t: { status: string; rag: string }) {
@@ -81,6 +81,22 @@ function RaciKey() {
   );
 }
 
+function PartyKey() {
+  return (
+    <div className="party-key" aria-label="Column names">
+      <div className="party-key-title">Columns</div>
+      <div className="party-grid">
+        {data.parties.map((p) => (
+          <div key={p.code} className="party-row">
+            <span className="party-code">{p.code}</span>
+            <span className="party-label">{p.label}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function pillClass(status: string, rag?: string) {
   const s = status.toLowerCase();
   if (s.includes("done")) return "pill pill-ok";
@@ -93,6 +109,8 @@ export default function App() {
   const [tab, setTab] = useState<Tab>("roadmap");
   const [q, setQ] = useState("");
   const [from, setFrom] = useState("");
+  const [askState, setAskState] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [sessionThreads, setSessionThreads] = useState<{ from: string; q: string }[]>([]);
 
   const gates = data.roadmap.length;
   const done = data.roadmap.filter((r) => r.status === "done").length;
@@ -100,15 +118,28 @@ export default function App() {
   const blocked = data.tasks.filter((t) => t.rag === "amber" || t.status.toLowerCase().includes("block")).length;
   const page = PAGE[tab];
 
-  const mailto = useMemo(() => {
-    const to = import.meta.env.VITE_PM_EMAIL || "";
-    const subject = encodeURIComponent("DigiThane PMO question");
-    const body = encodeURIComponent(
-      `From: ${from || "(name / organisation)"}\n\n${q}\n\n— sent from Ask the Development Cell`,
-    );
-    const addr = to ? `mailto:${to}` : "mailto:";
-    return `${addr}?subject=${subject}&body=${body}`;
-  }, [from, q]);
+  async function submitQuestion(e: FormEvent) {
+    e.preventDefault();
+    if (!q.trim()) return;
+    setAskState("sending");
+    const payload = new URLSearchParams({
+      "form-name": "pmo-question",
+      from: from.trim() || "(not given)",
+      question: q.trim(),
+    });
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: payload.toString(),
+      });
+    } catch {
+      /* local Vite has no Netlify Forms — still keep the thread on this page */
+    }
+    setSessionThreads((rows) => [{ from: from.trim() || "(not given)", q: q.trim() }, ...rows]);
+    setQ("");
+    setAskState("sent");
+  }
 
   return (
     <div className="shell">
@@ -146,7 +177,14 @@ export default function App() {
           <div>
             <p className="eyebrow">DigiThane 2.0</p>
             <h1>{page.title}</h1>
-            {tab === "raci" ? <RaciKey /> : page.blurb ? <p className="lede">{page.blurb}</p> : null}
+            {tab === "raci" ? (
+              <>
+                <RaciKey />
+                <PartyKey />
+              </>
+            ) : page.blurb ? (
+              <p className="lede">{page.blurb}</p>
+            ) : null}
           </div>
           <div className="top-meta">
             <div className="chip">
@@ -332,28 +370,43 @@ export default function App() {
 
           {tab === "ask" && (
             <div className="ask">
-              <div className="ask-copy">
-                <p>{data.sla.contact}</p>
-                <p className="cell-muted">
-                  Replies come from the Development Cell through the Project Manager. Written answers appear here on the
-                  next publish.
+              <form className="ask-form" name="pmo-question" method="POST" onSubmit={submitQuestion}>
+                <input type="hidden" name="form-name" value="pmo-question" />
+                <p className="honeypot" aria-hidden>
+                  <label>
+                    Don’t fill this
+                    <input name="bot-field" tabIndex={-1} autoComplete="off" />
+                  </label>
                 </p>
-              </div>
-              <form className="ask-form" onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="pmo-from">Name / organisation</label>
-                <input id="pmo-from" value={from} onChange={(e) => setFrom(e.target.value)} autoComplete="organization" />
+                <input
+                  id="pmo-from"
+                  name="from"
+                  value={from}
+                  onChange={(e) => setFrom(e.target.value)}
+                  autoComplete="organization"
+                />
                 <label htmlFor="pmo-q">Question</label>
-                <textarea id="pmo-q" rows={6} value={q} onChange={(e) => setQ(e.target.value)} />
-                <a className="btn" href={mailto}>
-                  Send to Project Manager
-                </a>
+                <textarea id="pmo-q" name="question" rows={6} value={q} onChange={(e) => setQ(e.target.value)} required />
+                <button className="btn" type="submit" disabled={askState === "sending"}>
+                  {askState === "sending" ? "Sending…" : "Submit question"}
+                </button>
+                {askState === "sent" ? (
+                  <p className="lede">Recorded on this board. A written reply can appear in Threads after the next publish.</p>
+                ) : null}
+                {askState === "error" ? <p className="lede">Could not send. Try again.</p> : null}
               </form>
               <div className="ask-threads">
                 <div className="stat-label">Threads</div>
-                {data.messages.length === 0 ? (
+                {data.messages.length === 0 && sessionThreads.length === 0 ? (
                   <p className="empty">No threads yet.</p>
                 ) : (
                   <ul>
+                    {sessionThreads.map((m, i) => (
+                      <li key={`s-${i}`}>
+                        <strong>{m.from}</strong> — {m.q}
+                      </li>
+                    ))}
                     {(data.messages as Array<string | Record<string, string>>).map((m, i) => (
                       <li key={i}>{typeof m === "string" ? m : m.answer || m.body || JSON.stringify(m)}</li>
                     ))}

@@ -6,7 +6,7 @@
   "parties": [
     {
       "code": "TMC",
-      "label": "Thane Municipal Corporation — authority and data fiduciary"
+      "label": "Thane Municipal Corporation"
     },
     {
       "code": "RailTel",
@@ -18,27 +18,27 @@
     },
     {
       "code": "PM",
-      "label": "Project Manager — sole coordinator with TMC / RailTel / Smartrags"
+      "label": "Project Manager"
     },
     {
       "code": "Eng",
-      "label": "Technical Lead — answers through the Project Manager"
+      "label": "Technical Lead"
     },
     {
       "code": "Dev",
-      "label": "Development team — people named by job title on Delivery Roles"
+      "label": "Development team"
     },
     {
       "code": "Ops",
-      "label": "DigiThane operations (merchant verification after go-live)"
+      "label": "DigiThane operations (merchant verification)"
     },
     {
       "code": "ERP",
-      "label": "Municipal ERP vendors (Ascentech / ABM) — when APIs apply"
+      "label": "Municipal ERP (Ascentech / ABM)"
     },
     {
       "code": "PG",
-      "label": "Common payment gateway vendor — when payments apply"
+      "label": "Common payment gateway"
     }
   ],
   "raciPhases": [
@@ -217,24 +217,10 @@
         "Grievance workflow (G-07)",
         "Municipal adapters — tax / water (G-05)",
         "Common payment gateway (G-06)",
-        "Merchant onboarding (G-10)",
-        "Merchant app (G-13)",
-        "Citizen marketplace bridge (G-12)",
-        "Advertisement packages (G-34)",
-        "Offers and coupons (G-11)",
+        "B2C pack — merchants, marketplace, ads, offers, classifieds, events, jobs, halls, premium, parking, property, tourism, clinics, daily deals (G-10, G-11, G-12, G-13, G-34, G-35, G-37, G-38, G-40, G-41, G-42, G-44, G-45, G-46, G-47)",
         "Forums (G-14)",
         "SOS (G-15)",
         "City alerts (G-09)",
-        "Classifieds (G-35)",
-        "Events / tickets (G-37)",
-        "Jobs (G-38)",
-        "Hall / ground booking (G-40)",
-        "Premium / ad-free (G-41)",
-        "Parking (G-42)",
-        "Property listings (G-44)",
-        "Tourism (G-45)",
-        "Clinic appointments (G-46)",
-        "Daily deals (G-47)",
         "Maps (G-17 / G-29)",
         "Citizen chatbot (G-18)",
         "Polls and surveys (G-08 / G-32)",
@@ -275,57 +261,13 @@
           "C"
         ],
         [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "R",
-          "-",
-          "-"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "R",
-          "-",
-          "C"
-        ],
-        [
-          "I",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
           "C",
           "I",
           "-",
           "C",
           "A",
           "R",
-          "C",
-          "-",
-          "-"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
           "R",
-          "C",
           "-",
           "C"
         ],
@@ -361,116 +303,6 @@
           "-",
           "-",
           "-"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "-"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "-"
-        ],
-        [
-          "C",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "-",
-          "-",
-          "C"
-        ],
-        [
-          "C",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "-",
-          "-",
-          "C"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
-          "C",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
-        ],
-        [
-          "-",
-          "I",
-          "-",
-          "C",
-          "A",
-          "R",
-          "C",
-          "-",
-          "C"
         ],
         [
           "C",
@@ -678,24 +510,10 @@
     "[P2] Grievance workflow (G-07)",
     "[P2] Municipal adapters — tax / water (G-05)",
     "[P2] Common payment gateway (G-06)",
-    "[P2] Merchant onboarding (G-10)",
-    "[P2] Merchant app (G-13)",
-    "[P2] Citizen marketplace bridge (G-12)",
-    "[P2] Advertisement packages (G-34)",
-    "[P2] Offers and coupons (G-11)",
+    "[P2] B2C pack — merchants, marketplace, ads, offers, classifieds, events, jobs, halls, premium, parking, property, tourism, clinics, daily deals (G-10, G-11, G-12, G-13, G-34, G-35, G-37, G-38, G-40, G-41, G-42, G-44, G-45, G-46, G-47)",
     "[P2] Forums (G-14)",
     "[P2] SOS (G-15)",
     "[P2] City alerts (G-09)",
-    "[P2] Classifieds (G-35)",
-    "[P2] Events / tickets (G-37)",
-    "[P2] Jobs (G-38)",
-    "[P2] Hall / ground booking (G-40)",
-    "[P2] Premium / ad-free (G-41)",
-    "[P2] Parking (G-42)",
-    "[P2] Property listings (G-44)",
-    "[P2] Tourism (G-45)",
-    "[P2] Clinic appointments (G-46)",
-    "[P2] Daily deals (G-47)",
     "[P2] Maps (G-17 / G-29)",
     "[P2] Citizen chatbot (G-18)",
     "[P2] Polls and surveys (G-08 / G-32)",
@@ -890,57 +708,13 @@
       "C"
     ],
     [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "R",
-      "-",
-      "-"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "R",
-      "-",
-      "C"
-    ],
-    [
-      "I",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
       "C",
       "I",
       "-",
       "C",
       "A",
       "R",
-      "C",
-      "-",
-      "-"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
       "R",
-      "C",
       "-",
       "C"
     ],
@@ -976,116 +750,6 @@
       "-",
       "-",
       "-"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "-"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "-"
-    ],
-    [
-      "C",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "-",
-      "-",
-      "C"
-    ],
-    [
-      "C",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "-",
-      "-",
-      "C"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
-      "C",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
-    ],
-    [
-      "-",
-      "I",
-      "-",
-      "C",
-      "A",
-      "R",
-      "C",
-      "-",
-      "C"
     ],
     [
       "C",
@@ -1270,7 +934,13 @@
       "gate": "T+8 Proof of concept",
       "date": "25 Sep 2026",
       "status": "queued",
-      "note": "Login, home, master control centre"
+      "note": "Login, home, master control centre. Screen prototypes already done (Figma Make)."
+    },
+    {
+      "gate": "B2C pack",
+      "date": "After MCC → UAT",
+      "status": "queued",
+      "note": "One stream: merchants, marketplace, ads, offers, classifieds, events, jobs, halls, premium, parking, property, tourism, clinics, deals."
     },
     {
       "gate": "UAT 1",
@@ -1327,6 +997,15 @@
       "target": "26 Aug 2026",
       "status": "In progress",
       "rag": "amber"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "UI",
+      "name": "UI prototyping (Figma Make) — citizen and merchant screens",
+      "role": "UI Designer",
+      "target": "19 Aug 2026",
+      "status": "Done",
+      "rag": "green"
     },
     {
       "phase": "1 Platform",
@@ -1429,46 +1108,10 @@
     },
     {
       "phase": "2 Services",
-      "id": "G-10",
-      "name": "Merchant onboarding",
-      "role": "Backend Engineer, Web Engineer",
-      "target": "After control centre",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-13",
-      "name": "Merchant app",
-      "role": "Mobile Engineer, Backend Engineer",
-      "target": "After control centre",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-12",
-      "name": "Citizen marketplace",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
-      "target": "After control centre",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-34",
-      "name": "Advertisement packages",
-      "role": "Product Manager, Backend Engineer",
-      "target": "After marketplace",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-11",
-      "name": "Offers and coupons",
-      "role": "Backend Engineer, Mobile Engineer",
-      "target": "With merchant app",
+      "id": "B2C",
+      "name": "B2C pack — G-10 merchants, G-13 merchant app, G-12 marketplace, G-34 ads, G-11 offers, G-35 classifieds, G-37 events, G-38 jobs, G-40 halls, G-41 premium, G-42 parking, G-44 property, G-45 tourism, G-46 clinics, G-47 deals",
+      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer, Ops",
+      "target": "UAT window",
       "status": "Queued",
       "rag": "green"
     },
@@ -1495,96 +1138,6 @@
       "id": "G-09",
       "name": "City alerts",
       "role": "Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-35",
-      "name": "Classifieds",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-37",
-      "name": "Events and tickets",
-      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-38",
-      "name": "Jobs",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-40",
-      "name": "Hall and ground booking",
-      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-41",
-      "name": "Premium (advertisement-free commercial)",
-      "role": "Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-42",
-      "name": "Parking",
-      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-44",
-      "name": "Property listings",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-45",
-      "name": "Tourism",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-46",
-      "name": "Clinic appointments",
-      "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer",
-      "target": "UAT window",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "2 Services",
-      "id": "G-47",
-      "name": "Daily deals",
-      "role": "Product Manager, Web Engineer, Mobile Engineer",
       "target": "UAT window",
       "status": "Queued",
       "rag": "green"
@@ -1728,15 +1281,15 @@
   "roles": [
     {
       "role": "Chief Technology Officer",
-      "mandate": "Sets build order, accepts each module, raises blockers to the Project Manager"
+      "mandate": "Sets build order and accepts each module"
     },
     {
       "role": "Project Manager",
-      "mandate": "Single point of contact for TMC, RailTel, and Smartrags"
+      "mandate": "Delivery plan, gates, and written questions"
     },
     {
       "role": "Technical Lead",
-      "mandate": "Day-to-day technical decisions and answers to written questions"
+      "mandate": "Day-to-day technical decisions"
     },
     {
       "role": "Business Analyst",
@@ -1804,21 +1357,21 @@
     },
     {
       "role": "UI Designer",
-      "mandate": "Screens in Marathi and English"
+      "mandate": "Screen prototypes (Figma Make) and production UI in Marathi and English"
     }
   ],
   "sla": {
     "question_ack_wd": 1,
     "question_answer_wd": 3,
     "nightly_refresh": "End of each working day (IST)",
-    "board_update": "How this board is updated: at the end of each working day (IST) the Development Cell refreshes status, copies it into the public PMO site, and pushes git. Netlify rebuilds this page. The Excel file has no live status.",
-    "contact": "Please write to the Project Manager only. The Technical Lead answers through the Project Manager. Team members are not available for direct calls or meetings."
+    "board_update": "Updated: Everyday EOD (IST) Status Is Refreshed By Development Cell",
+    "contact": ""
   },
   "notes": [
     "This matrix is software development through go-live on 30 November 2026. Letter of intent paperwork, consortium board, performance bank guarantee, and the inception report are not in this file.",
     "R = Responsible (does the work). A = Accountable (one owner per row who signs off). C = Consulted (two-way). I = Informed (one-way). “-” = not in this activity.",
     "Colours: Accountable = red, Responsible = green, Consulted = gold, Informed = blue, Not applicable = grey.",
-    "Delivery Roles lists job titles on this project. TMC, RailTel, and Smartrags write to the Project Manager only. Do not call engineers directly.",
+    "Delivery Roles lists job titles on this project.",
     "Where municipal or payment-gateway documents are still awaited, those vendors stay Consulted until the documents arrive.",
     "CERT-In VAPT and STQC are part of go-live. RailTel (consortium) books the labs. The delivery team supplies the environment and closes findings before cut-over."
   ],
