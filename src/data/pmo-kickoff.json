@@ -933,14 +933,14 @@
     {
       "gate": "T+8 Proof of concept",
       "date": "25 Sep 2026",
-      "status": "queued",
-      "note": "Login, home, master control centre. Screen prototypes already done."
+      "status": "in_progress",
+      "note": "Login, home, search, CMS notices, master control centre — Phase 1 platform Approved 13 Sep 2026."
     },
     {
       "gate": "B2C pack",
       "date": "After MCC → UAT",
       "status": "queued",
-      "note": "One stream: merchants, marketplace, ads, offers, classifieds, events, jobs, halls, premium, parking, property, tourism, clinics, deals."
+      "note": "Post-launch for TMC clock (AD-039). One stream: merchants, marketplace, ads, offers, classifieds, events, jobs, halls, premium, parking, property, tourism, clinics, deals."
     },
     {
       "gate": "UAT 1",
@@ -986,8 +986,8 @@
       "name": "API gateway — certify with security",
       "role": "Integration Engineer",
       "target": "26 Aug 2026",
-      "status": "In progress",
-      "rag": "amber"
+      "status": "Done",
+      "rag": "green"
     },
     {
       "phase": "1 Platform",
@@ -995,8 +995,8 @@
       "name": "Security, user roles, and audit trail",
       "role": "Security Engineer",
       "target": "26 Aug 2026",
-      "status": "In progress",
-      "rag": "amber"
+      "status": "Done",
+      "rag": "green"
     },
     {
       "phase": "1 Platform",
@@ -1022,7 +1022,7 @@
       "name": "Citizen login, one-time password, consent, and profile",
       "role": "Backend Engineer, Web Engineer, Mobile Engineer",
       "target": "11 Sep 2026",
-      "status": "Next",
+      "status": "Done",
       "rag": "green"
     },
     {
@@ -1031,7 +1031,7 @@
       "name": "Notifications (app, SMS, email)",
       "role": "Backend Engineer",
       "target": "18 Sep 2026",
-      "status": "Queued",
+      "status": "Done",
       "rag": "green"
     },
     {
@@ -1040,7 +1040,7 @@
       "name": "Citizen data download and deletion",
       "role": "Security Engineer, Backend Engineer",
       "target": "18 Sep 2026",
-      "status": "Queued",
+      "status": "Done",
       "rag": "green"
     },
     {
@@ -1049,7 +1049,7 @@
       "name": "Citizen home, search, and service tiles (Marathi and English)",
       "role": "Web Engineer, Mobile Engineer, UI Designer",
       "target": "25 Sep 2026",
-      "status": "Queued",
+      "status": "Done",
       "rag": "green"
     },
     {
@@ -1058,16 +1058,7 @@
       "name": "Master control centre",
       "role": "Web Engineer, Analytics Engineer",
       "target": "25 Sep 2026",
-      "status": "Queued",
-      "rag": "green"
-    },
-    {
-      "phase": "1 Platform",
-      "id": "T+8",
-      "name": "Proof-of-concept demonstration",
-      "role": "Chief Technology Officer",
-      "target": "25 Sep 2026",
-      "status": "Queued",
+      "status": "Done",
       "rag": "green"
     },
     {
@@ -1076,8 +1067,17 @@
       "name": "News, notices, and editable policy text",
       "role": "Backend Engineer, Web Engineer",
       "target": "9 Oct 2026",
-      "status": "Queued",
+      "status": "Done",
       "rag": "green"
+    },
+    {
+      "phase": "1 Platform",
+      "id": "T+8",
+      "name": "Proof-of-concept demonstration",
+      "role": "Chief Technology Officer",
+      "target": "25 Sep 2026",
+      "status": "In progress",
+      "rag": "amber"
     },
     {
       "phase": "2 Services",
@@ -1112,7 +1112,7 @@
       "name": "B2C pack — G-10 merchants, G-13 merchant app, G-12 marketplace, G-34 ads, G-11 offers, G-35 classifieds, G-37 events, G-38 jobs, G-40 halls, G-41 premium, G-42 parking, G-44 property, G-45 tourism, G-46 clinics, G-47 deals",
       "role": "Product Manager, Backend Engineer, Web Engineer, Mobile Engineer, Ops",
       "target": "UAT window",
-      "status": "Queued",
+      "status": "Queued — post-launch",
       "rag": "green"
     },
     {
